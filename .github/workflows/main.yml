@@ -1,0 +1,8 @@
+name: Proba
+on:
+  workflow_dispatch:
+    inputs:
+      withGraphSync:
+        type: boolean
+        default: false
+        description: First input param
