@@ -6,6 +6,7 @@ import {
 } from '../dto/api-interfaces';
 import { SecretHandlerService } from '../secret-handler/secret-handler.service';
 
+// ! This is where I would have preferred your business logic.
 @Injectable()
 export class SecretRepositoryService {
   constructor(private secretHandler: SecretHandlerService) {}

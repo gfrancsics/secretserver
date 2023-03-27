@@ -6,6 +6,7 @@ import { SecretHandlerService } from '../secret-handler/secret-handler.service';
 import { Secret, SecretDocument } from '../secret-modell/secret-schema';
 import { Model } from 'mongoose';
 
+// ! I'm missing the negativ test cases and test cases where you test the business logic.
 describe('SecretService', () => {
   let service: SecretHandlerService;
   let model: Model<Secret>;

@@ -6,6 +6,9 @@ import {
   ReadSecretMetaDto,
 } from '../dto/api-interfaces';
 
+// ! The route definitions don't exactly fit the requirements, but it is fine.
+// ! But the input validation is really missing. The users doesn't have any response if they send bad\incorrect data.
+// ! Or since this is kind of a safety critical API, you have to be aware of malicious users.
 @Controller('secret-repository')
 export class SecretRepositoryController {
   constructor(private readonly secretService: SecretRepositoryService) {}
